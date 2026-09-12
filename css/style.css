@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden; /* buttons are positioned within the window, no page scroll */
+}
+
+.controls-area {
+    position: relative;
+    z-index: 10; /* stays above the game buttons at all times */
+}
+
+.setup-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-row input[type="number"] {
+    width: 4em;
+}
+
+.message-area {
+    padding: 0 10px;
+    font-weight: bold;
+    min-height: 1.5em;
+}
+
+.game-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.game-button {
+    box-sizing: border-box;
+    width: 10em;
+    height: 5em;
+    border: none;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: default;
+}
+
+/* Only show a pointer cursor once scrambling has actually finished
+   and clicks are accepted (MemoryGame.enableClicking calls
+   GameButton.setClickable(true), which adds this class). */
+.game-button.clickable {
+    cursor: pointer;
+}
