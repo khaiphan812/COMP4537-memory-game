@@ -7,8 +7,8 @@ export const USER_MESSAGES = {
     LABEL_HOW_MANY: "How many buttons to create?",
     BTN_GO: "Go",
     ERROR_INVALID_NUMBER: (min, max) => `Please enter a whole number between ${min} and ${max}.`,
-    MSG_WATCH_CLOSELY: "Watch closely...",
-    MSG_YOUR_TURN: "Your turn! Click the buttons in the order they first appeared.",
+    MSG_WATCH_CLOSELY: "Watch closely",
+    MSG_YOUR_TURN: "Now click the buttons in the order they first appeared.",
     MSG_EXCELLENT: "Excellent memory!",
-    MSG_WRONG_ORDER: "Wrong order!"
+    MSG_WRONG_ORDER: "Wrong order. Game over!"
 };
